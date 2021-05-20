@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: mkerker/rancher-demo:1.0
+          image: bashofmann/rancher-demo:1.0.0
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
@@ -23,7 +23,7 @@ spec:
             protocol: TCP
           env:
             - name: COW_COLOR
-              value: red
+              value: yellow
           readinessProbe:
             httpGet:
               port: web
